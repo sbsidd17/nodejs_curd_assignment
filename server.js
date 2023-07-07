@@ -1,10 +1,16 @@
-// Hello World in Nodejs
+const express = require('express')
+require('dotenv').config()
+const {authRout} = require('./routes/authRoutes.js');
+const { dbConnect } = require('./config/dbConnect.js');
 
-var http = require('http');  
-  
-http.createServer(function (req, res) {
-    res.write('Hello World!');
-    res.end();
-}).listen(4000);
-  
-console.log('Server running at 4000');
+const app = express();
+dbConnect()
+
+app.use(express.json())
+app.use('/', authRout)
+
+const port = 3000;
+
+app.listen(port, ()=>{
+  console.log(`App is listining in port ${port}`);
+})
