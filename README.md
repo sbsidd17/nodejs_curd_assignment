@@ -14,6 +14,8 @@ Returns a simple message indicating that the backend server is running.
     Response:
         Status Code: 200 (OK)
         Body: "User Management Backend with Express and MongoDB"
+![image](https://github.com/sbsidd17/nodejs_curd_assignment/assets/122801841/2145bc5d-f7fd-4851-9d08-f54cc335b468)
+
 
 POST /signup
 
@@ -32,6 +34,10 @@ Registers a new user with the provided name, email, and password.
         Status Code: 200 (OK) or 400 (Bad Request)
         Body (if successful): { "msg": "User Registered Successfully" }
         Body (if unsuccessful): { "msg": "<error message>" }
+![image](https://github.com/sbsidd17/nodejs_curd_assignment/assets/122801841/f6861650-150f-4c86-b091-ea6111021cdc)
+![image](https://github.com/sbsidd17/nodejs_curd_assignment/assets/122801841/84a9a942-c614-4883-b68f-0eb3d5392d5b)
+
+
 
 POST /login
 
@@ -50,6 +56,13 @@ Authenticates a user with the provided email and password.
         Body (if successful): "User Login Successfully"
         Body (if password is wrong): "Password is wrong"
         Body (if no account associated with the email): "No Account Associate with this account"
+
+ ![image](https://github.com/sbsidd17/nodejs_curd_assignment/assets/122801841/a6a7fb57-6706-4f96-af99-03933a652997)
+ ![image](https://github.com/sbsidd17/nodejs_curd_assignment/assets/122801841/fb38c80a-9f1d-4e8e-a254-b8f06e41a442)
+ ![image](https://github.com/sbsidd17/nodejs_curd_assignment/assets/122801841/7eb89df4-fd14-4f9a-b3b1-b75c618f777d)
+
+
+
 
 Example Usage
 Register a new user
